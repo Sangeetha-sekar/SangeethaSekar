@@ -1,0 +1,150 @@
+<head>
+    <title>ClassCover</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://image.flaticon.com/icons/svg/109/109617.svg">
+    <link rel="stylesheet" href="https://fontawesome.com/icons/arrow-left">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<div class="box">
+    <i class='fa fa-square' style='font-size:18px;color:rgb(135, 245, 66)'></i><span class="squ"> Available</span>
+    <i class='fa fa-square' style='font-size:18px;color:rgb(69, 48, 186)'></i><span class="squ"> Booked</span>
+    <i class='fa fa-square' style='font-size:18px;color:orange'></i><span class="squ"> Haven't indicated</span>
+    <i class='fa fa-square' style='font-size:18px;color:red'></i><span class="squ"> Vacation</span>
+    <i class='fa fa-square' style='font-size:18px;color:red'></i><span class="squ"> Unavailable</span>
+</div><br>
+<div>    
+    <span class="pre"><i class="fa fa-arrow-left pre1"></i><a class="pre"
+            href="https://www.classcover.com.au/relief-teachers#teachers/features">Previous Fortnight</a></span>
+            <!--<input type="text" name="search" [(ngModel)]="searchText" autocomplete="off" placeholder="Search">-->
+            <form class="example"  style="margin:auto;max-width:300px;margin-left: 390px;">
+    <input type="text" name="search" [(ngModel)]="searchText" placeholder="Search.." autocomplete="off">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            <span class="next"><i class="fa fa-arrow-right" style="float:right"></i><a class="next"
+            href="https://www.classcover.com.au/schools">Next
+            Fortnight</a></span>
+</div>
+<!-- header starting-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <span class="show1">Show Details(Subjects and Tags)</span>
+        </div>
+    </div>
+</div>
+<!-- header ending-->
+
+<li *ngFor="let hero of heroes | filter:searchText">
+    <hr>
+<span style="padding-top: 20px;">
+    <span class="show col-md-2">
+        {{hero.name}}
+    </span>
+    <i class="fa fa-star str"></i>
+    <i class="fa fa-star str"></i><br>
+    <span class="show">
+        <i class='fa fa-phone phn'></i>
+        <a href="tel:+61415148804"></a>{{hero.tel}}
+    </span>
+</span>
+    <label class="container"> 
+       <span style="cursor:not-allowed"> {{hero.classType}}</span>
+        <span>
+        <span *ngIf="hero.Type;then content else other_content"></span>
+        <ng-template #content><input type="checkbox" checked="checked"> <span class="checkmark"></span>
+        </ng-template>
+        <ng-template #other_content><input type="checkbox"><span class="checkmark"></span>
+        </ng-template>
+        </span>    
+      <!-- <input type="checkbox" *ngIf ="hero.Type" checked="checked"><span class="checkmark"></span>
+        <input type="checkbox" *ngIf !="hero.Type"><span class="checkmark"></span>-->
+       <!--   <span>  <input type="checkbox" *ngIf="hero.name == 'Kylie Jolly'" checked="checked">  
+            <input type="checkbox" *ngIf!="hero.name == 'Kylie Jolly'">  
+           <span class="checkmark"  ></span>
+          </span>
+        -->
+        <span class="con">{{hero.chatMember}}</span> 
+        <div  class="con" style="margin-left: 150px;color: skyblue;" (click)="notes()">{{hero.noteType}}</div>
+        <span *ngIf="hero.name == 'Kristie Minshall'">
+            <span class="square col-md-4 mar" style="margin-left:350px;">UA</span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 sq mar" style="cursor:not-allowed"></span>
+            <span class="square col-md-4 sq mar" style="cursor:not-allowed"></span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 sq mar" style="cursor:not-allowed"></span>
+            <span class="square col-md-4 sq mar" style="cursor:not-allowed"></span>
+            <span class="square col-md-4 mar">UA</span>
+        </span>
+        <span *ngIf="hero.name == 'Sarah Symons'">
+            <span class="square col-md-4 org sy" style="margin-left:350px;">HI</span>
+            <span class="square col-md-4 org mar">HI</span>
+            <span class="square col-md-4 org mar">HI</span>
+            <span class="square col-md-4 org mar">HI</span>
+            <span class="square col-md-4 sq mar" style="cursor:not-allowed"></span>
+            <span class="square col-md-4 sq mar" style="cursor:not-allowed"></span>
+            <span class="square col-md-4 org mar">HI</span>
+            <span class="square col-md-4 org mar">HI</span>
+            <span class="square col-md-4 org mar">HI</span>
+            <span class="square col-md-4 org mar">HI</span>
+            <span class="square col-md-4 org mar">HI</span>
+            <span class="square col-md-4 sq mar" style="cursor:not-allowed"></span>
+            <span class="square col-md-4 sq mar" style="cursor:not-allowed"></span>
+            <span class="square col-md-4 org mar">HI</span>
+        </span>
+        <span *ngIf="hero.name == 'Kylie Jolly'">
+            <span class="square col-md-4" style="margin-left:350px;">UA</span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 gre mar" (click)="openDialog()">A</span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 sq mar" style="cursor:not-allowed"> </span>
+            <span class="square col-md-4 sq mar" style="cursor:not-allowed"></span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 gre mar" (click)="openDialog()">A</span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 sq mar" style="cursor:not-allowed"></span>
+            <span class="square col-md-4 sq mar" style="cursor:not-allowed"></span>
+            <span class="square col-md-4 mar">UA</span>
+        </span>
+        <span *ngIf="hero.name == 'Muniba Jose'">
+            <span class="square col-md-4" style="margin-left:350px;">UA</span>
+            <span class="square col-md-4 blu mar">B</span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 sq mar" style="cursor:not-allowed"></span>
+            <span class="square col-md-4 sq mar" style="cursor:not-allowed"></span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 mar">UA</span>
+            <span class="square col-md-4 sq mar" style="cursor:not-allowed"></span>
+            <span class="square col-md-4 sq mar" style="cursor:not-allowed"></span>
+            <span class="square col-md-4 mar">UA</span>
+        </span>
+    </label>
+</li> 
+
+<!--<div>
+    <mbsc-form>
+        <mbsc-form-group>
+            <mbsc-form-group-title>Two week view</mbsc-form-group-title>
+            <mbsc-calendar [(ngModel)]="calendarTwoWeek" display="inline" weeks="2"></mbsc-calendar>
+        </mbsc-form-group>
+    </mbsc-form>
+</div>-->

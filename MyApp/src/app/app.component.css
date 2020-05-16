@@ -1,0 +1,187 @@
+.pre{
+  color:skyblue;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size:30px;
+  text-decoration:none !important;
+}
+.pre1{
+padding-right:14px;
+}
+.next{
+color:skyblue;
+font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+float:right;
+font-size:30px;
+text-decoration:none !important;
+margin-right:20px;
+}
+.box{
+  margin-left: 780px;
+  margin-top:50px;
+}
+.squ{
+margin-right:70px;
+font-size:28px;
+}
+.show1{
+color:skyblue;
+font-size:18px;
+}
+.show{
+  color:skyblue;
+  font-size:25px;
+  margin-left:50px;
+ 
+}
+
+.container {
+display: block;
+position: relative;
+padding-left: 35px;
+margin-top: -77px;
+margin-left:560px !important;
+cursor: pointer;
+font-size: 22px;
+padding-top: 52px !important;
+}
+.contain{
+text-decoration: none !important;
+padding-left: 25px;
+margin-left:60px;
+}
+.sy{
+margin-top:-30px;
+}
+.con{
+padding-left: 40px;
+}
+.str{
+font-size:25px !important;
+color:rgb(245, 194, 66);
+}
+.phn{
+font-size:24px;
+color:grey;
+}
+.mar{
+margin-left:4px;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+height: 0;
+width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+position: absolute;
+left: 0;
+height: 30px;
+width: 30px;
+margin-left:-20px;
+background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+left: 9px;
+top: 5px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+.square {
+height: 21px;
+background-color: red;
+padding: 47px 0px 10px 40px !important;
+
+}
+.sq {
+height: 21px;
+background-color:lightgray;
+padding:47px 22px 10px 40px !important;
+}
+.org {
+height: 21px;
+background-color:orange;
+padding: 50px 7px 10px 40px !important;
+}
+.gre {
+height: 21px;
+background-color:rgb(135, 245, 66);
+padding: 47px 17px 10px 40px !important;
+}
+.blu{
+height: 21px;
+background-color: rgb(69, 48, 186);
+padding: 47px 22px 10px 40px !important;
+}
+
+body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+form.example input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+
+form.example button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}

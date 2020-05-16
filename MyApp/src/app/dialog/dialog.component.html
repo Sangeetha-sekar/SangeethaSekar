@@ -1,0 +1,35 @@
+<div *ngIf="this.pop == 'Available'">
+<mat-dialog-content >
+  <h1 mat-dialog-title>Hi</h1>
+  <textarea id="w3mission" rows="4" cols="50" [(ngModel)]="Available">
+    </textarea>
+  </mat-dialog-content>
+  
+  <mat-dialog-actions>
+    <button style="float:left;border-radius:15%;background-color:green; color:white;
+    margin-left:250px;height:30px;width:50px;" mat-button mat-dialog-close (click)="save()">Save</button>
+  <button style="float:left;border-radius:15%;background-color:green; color:white;
+  margin-left:5px;height:30px;width:50px;" mat-button mat-dialog-close (click)="cancel()">Cancel</button>
+  </mat-dialog-actions>
+</div>
+
+<div *ngIf="this.pop == 'Notes'">
+  <mat-dialog-content >
+    <h1 mat-dialog-title>Hi</h1>
+    <textarea id="w3mission" rows="4" cols="50" [(ngModel)]="Notes">
+      </textarea>
+    </mat-dialog-content>
+    
+    <mat-dialog-actions>
+      <button  style="float:left;border-radius:15%;background-color:green; color:white;
+      margin-left:250px;height:30px;width:50px;" mat-button mat-dialog-close (click)="save()">Save</button>
+    <button style="float:left;border-radius:15%;background-color:green; color:white;
+    margin-left:5px;height:30px;width:50px;" mat-button mat-dialog-close (click)="cancel()">Cancel</button>
+    </mat-dialog-actions>
+</div>
+ <!-- <mat-dialog-content *ngIf="this.pop == 'Notes' ">
+    <h1 mat-dialog-title></h1>
+    <textarea id="w3mission" rows="4" cols="50" [(ngModel)]="Available">
+      At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+      </textarea>
+    </mat-dialog-content>-->
