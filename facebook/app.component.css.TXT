@@ -1,0 +1,127 @@
+.first{
+    background-color:#3b5998;;
+    color:white;
+    height:84px;
+    padding-right: 230px;
+}
+.fac{
+    padding-left:250px;
+    font-size: xx-large;
+    font-weight: bold;
+    padding-top:34px;
+}
+.mail{
+    margin-left: 200px;
+}
+.pass{
+    margin-left:19px;
+}
+.but{
+    background-color: #3b5998;
+    color:white;
+    margin-left:15px;
+}
+.for{
+   text-decoration: none;
+   margin-left:1042px ;
+   margin-bottom: 80px;
+   color: #9cb4d8;
+}
+.column{
+    float: left;
+  width: 41%;
+}
+.whole{
+    background:linear-gradient(white, #D3D8E8);
+    height:751px;
+}
+.fig{
+    padding-left:267px;  
+    margin-top:40px;
+    font-size: x-large;
+    font-weight: 800;
+}
+.fir{
+    font-family: inherit;
+    width: 172px;
+    font-size: 18px;
+    padding: 8px 10px;
+    border-color: #bdc7d8;
+    border-radius: 5px;
+    position: relative;
+}
+.sur{
+    font-family: inherit;
+    width: 172px;
+    font-size: 18px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-left: 8px;
+    margin-top: 8px;
+}
+.mob,.pa{
+    font-family: inherit;
+    width: 377px;
+    font-size: 18px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    margin-top:8px;
+}
+.bir,.gen{
+    font-family: inherit;
+    font-size: 23px;
+    border-radius: 5px;
+    margin-top:25px;
+    color:gray;
+}
+.day{
+    font-family: inherit;
+    font-size: 23px;
+    margin-top:8px;
+}
+.mon,.year{
+    font-family: inherit;
+    font-size: 23px;
+    margin-top:8px;
+    width:90px;
+}
+.cus,.mal,.fem{
+    font-family: inherit;
+    font-size: 23px;
+    margin-top:8px; 
+}
+.line{
+    font-family: inherit;
+    font-size: 15px;
+    margin-top:18px;  
+    font-weight: 10px !important;
+    text-decoration: none;
+}
+.sign{
+    font-family: 'Freight Sans Bold', Helvetica, Arial, sans-serif !important;
+    font-weight: bold !important;
+    font-size: 19px;
+    line-height: 126%;
+    min-width: 194px;
+    padding: 7px 20px;
+    text-align: center;
+    background: linear-gradient(#67ae55, #578843);
+    background-color: #69a74e;
+    border-radius: 5px;
+    color:white;
+}
+.foot{
+    text-decoration: none;
+    font-family: inherit;
+    font-size: 15px;
+    margin-top:18px;  
+}
+/*.image{
+    height:194px;
+    width:536px;
+}*/
+
+
+
+
+
