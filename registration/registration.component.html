@@ -1,0 +1,23 @@
+<div class="whole-div">
+    <h3 style="text-align: center;">Register</h3>
+    <span>Create your account</span><br>
+<input class="first-name" type="text" [(ngModel)]="firstname" placeholder="FirstName">
+<input class="last-name" type="text" [(ngModel)]="lastname" placeholder="LastName"><br>
+<input class="email" type="email" [(ngModel)]="email" placeholder="Email"><br>
+<input class="phone" type="number" [(ngModel)]="phone" placeholder="Phone"><br>
+<div class="gender">Gender
+<input type="radio">Male
+<input type="radio">Female</div><br>
+
+
+<span class="address">Address</span><br>
+<textarea class="text-width" [(ngModel)]="address" placeholder="Address" rows="3" cols="24"></textarea><br>
+<input  type="password" class="pass" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"  placeholder="Password"><br>
+<input type="password" class="pass"  placeholder="Confirm Password"><br>
+<div class="file-up">File Upload</div>
+<form>
+    <input type="file" id="myFile" name="filename">
+  </form><br>
+<button class="submit-btn" [disabled]="!firstname || !lastname || !email || !phone || !address"
+  (click)="submitForm('page')">Submit</button>
+</div>

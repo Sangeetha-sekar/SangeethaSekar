@@ -1,0 +1,52 @@
+.first-name{
+    margin-left:10px;
+    width:100px;
+}
+.last-name{
+    margin-left:10px;
+    margin-top:17px;
+    width:100px;
+}
+.whole-div{
+border:ridge;
+text-align: center;
+background-color: lightgray;
+margin:80px 310px 50px 300px;
+}
+.email,.phone{
+    margin-left:10px;
+    margin-top:17px;
+    width:220px;
+}
+.gender{
+    margin-top:17px;
+    margin-left:-50px;
+}
+.address{
+    margin-left:-165px;
+}
+.text-width{
+    width:220px;
+    margin-left:10px;
+    margin-top:5px;
+}
+.pass{
+    width:218px;
+    margin-top:12px;
+    margin-left:8px;
+}
+.file-up{
+    margin-top:15px;
+    margin-left:-150px;
+}
+.submit-btn{
+    width:100px;
+    height:30px;
+    color:white;
+    border-radius:3px;
+    background-color: green;
+}
+#myFile{
+    margin-left:30px;
+    margin-top:6px;
+}

@@ -1,0 +1,9 @@
+<div class="box-brd log-whole-div">
+    <h3>Login</h3>
+
+<input class="email" type="email" [(ngModel)]="Email"  placeholder="Email" ><br>{{this.Email}}
+<input type="username" [(ngModel)]="user" ><br>{{this.user}}
+<input class="passwd" type="password" [(ngModel)]="Password" placeholder="Password"><br>
+<button class="log-btn" [disabled]="!Email" (click)="logIn()">Login</button>
+<button class="sign-up" (click)="signUp()">SignUp</button> 
+</div>

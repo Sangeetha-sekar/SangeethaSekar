@@ -1,0 +1,36 @@
+.email{
+      margin-left:20px;
+      width:250px;
+}
+.passwd{
+    margin-left:20px;
+    margin-top:10px;
+    width:250px;
+}
+.log-btn{
+    margin-top: 10px;
+    margin-left:100px;
+    background-color: green;
+    color:white;
+    height:30px;
+    width:80px;
+    border-radius:3px;
+}
+.sign-up{
+    margin-top: 10px;
+    margin-left:5px;
+    background-color: green;
+    color:white;
+    height:30px;
+    width:80px;
+    border-radius:3px;
+}
+.box-brd{
+    margin-top:70px;
+    border:ridge;
+    text-align:center;
+}
+.log-whole-div{
+    margin:80px 310px 50px 300px;
+    background-color: lightgray;
+}
